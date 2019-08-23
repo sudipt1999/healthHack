@@ -1,3 +1,7 @@
+####STARTING THE PROJECT
+-> Just download the zip and run ```npm install``` then ```npm start```
+
+
 # Health Hack
 I am sure there are times where you can't share the thing with your 
 best friends or family or anyone.
