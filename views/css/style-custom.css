@@ -1,75 +1,129 @@
-nav{
-    background-color: #e01616;
-    color: #fff;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../img/luke-chesser-unsplash.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
 
+nav {
+  background-color: rgb(52, 93, 196);
+  color: #fff;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  margin-left: .5rem;
+}
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff !important;
+  color: #fff !important;
 }
 
-nav ul li:hover{
-    box-sizing:border-box;
+nav ul li:hover {
+  border-bottom: solid 1px #fff;
+  width: fit-content;
+}
+
+@media screen and (min-width: 900px) {
+  nav {
+    max-height: 72px;
+  }
+
+  nav ul li:hover {
+    transform: scale(1.2);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-delay: 0s;
     border-bottom: solid 3px #fff;
+  }
 }
 
-
-@media screen and (min-width: 900px){
-    nav{
-        max-height: 72px;
-    }
-
-    
-    nav ul li:hover{
-        transform: scale(1.2);
-        transition-property: transform;
-        transition-duration: 1s;
-        transition-delay: 0s;
-        border-bottom: solid 3px #fff;
-    }
-
-
+.hero-block {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(209, 209, 209);
+  width: 80%;
 }
 
-
-footer{
-    background-color: #e01616;
-    color:#fff;
+.fa-h-square {
+  font-size: 2rem;
+  margin-right: 0.5rem;
 }
-footer h5{
-    font-weight: bold;
+
+.hero-block h1 {
+  font-size: 3rem;
+}
+
+.hero-block h2 {
+  font-size: 2.5rem;
+}
+
+.hero-block h2 .hero-special-text {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.hero-special-text {
+  color: #4caf51;
+}
+
+footer {
+  background-color: rgb(221, 223, 231);
+  color: rgb(52, 93, 196);
+  text-align: center;
+}
+footer h5 {
+  font-weight: bold;
 }
 footer ul {
-    padding: 0 !important;
+  padding: 0 !important;
 }
-footer li, footer a {
-    text-decoration: none;
-    list-style-type: none;
-    color: #fff;
-}
-
-footer a:hover{
-    color: rgb(202, 197, 197);
+footer li,
+footer a {
+  /* text-decoration: none; */
+  list-style-type: none;
+  color: #fff;
+  color: rgb(52, 93, 196);
 }
 
-footer h5::after{
-    content: "";
-    display: block;
-    width:25%;
-    background-color: #fff;
-    height: 2px;
+footer a:hover {
+  color: rgb(29, 58, 133);
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
 }
 
-#footer-last{
-    background: #fff;
-    color: #e01616;
-    border: solid 1px #e01616;
+footer h5::after {
+  content: "";
+  display: block;
+  width: 50px;
+  background-color: rgb(52, 93, 196);
+  height: 2px;
+  margin: 0.5rem auto;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    left:0;
-    width: 100%;
+#footer-last {
+  background: rgb(52, 93, 196);
+  color: #fff;
+  /* border: solid 1px #e01616; */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
