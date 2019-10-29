@@ -1,6 +1,7 @@
 ####STARTING THE PROJECT
 -> Just download the zip and run ```npm install``` then ```npm start```
 
+Special Thanks To Anirudh Ghildiyal
 
 # Health Hack
 I am sure there are times where you can't share the thing with your 
